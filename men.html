@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppy Men's Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="cards.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .view-details-btn {
+            background-color: #ff4081;
+            border-color: #ff4081;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .view-details-btn:hover {
+            background-color: #ff1a66;
+            border-color: #ff1a66;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Shoppy Men's Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item dropdown" style="z-index: 500;">
+                        <a class="nav-link dropdown-toggle custom-cart" href="#" id="cartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cart <span id="cart-count" class="badge bg-dark">0</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cartDropdown">
+                            <li><div id="cart-items" class="dropdown-item">No items in cart</div></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="payment.html" id="buy-now" class="btn btn-primary btn-block" style="display: none;">Buy Now</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row row-custom">
+            <!-- Product Card 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Men's Tailored Grey Suit"
+                data-price="₹1830"
+                data-description="A classic dark grey tailored suit perfect for formal and business occasions."
+                data-image="images/men-suit2.jpg"
+                data-material-type="Wool Blend"
+                data-length="Standard Suit Length"
+                data-occasion-type="Formal and Business"
+                data-sleeve-type="Full Sleeves"
+                data-pattern="Solid"
+                data-style="Classic Men's Suit with a modern touch"
+                data-country-of-origin="India"
+                >
+                   
+                    <img src="images/men-suit1.jpeg" class="card-img-top card-img-custom"alt="Fashionable Bellies">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Classic suits</h5>
+                        <p class="card-text">₹2500</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">3.8</span> 2596 Reviews</p>
+                        
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Classic suits" data-price="2500" data-image="images/men-suit1.jpeg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Classic suits" data-price="2500" data-image="images/men-suit1.jpeg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Men's Georgette Suit"
+                data-price="₹1830"
+                data-description="Blue suit perfect for every occasion."
+                data-image="images/men-suit2.jpg"
+                data-material-type="Georgette"
+                data-length="Standard Suit Length"
+                data-occasion-type="Formal and Festive"
+                data-sleeve-type="Full Sleeves"
+                data-pattern="Solid"
+                data-style="Classic Men's Suit with a modern touch"
+                data-country-of-origin="India">
+                    <img src="images/men-suit2.jpg" class="card-img-top card-img-custom" alt="Pretty Graceful Women">
+                    <div class="card-body">
+                        <h5 class="card-title">Georgette suit</h5>
+                        <p class="card-text">₹1830</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.2</span> 39645 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Georgette suit" data-price="1830" data-image="images/men-suit2.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Georgette suit" data-price="1830" data-image="images/men-suit2.jpg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+            
+             
+            <!-- Product Card 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Black T-Shirt"
+                data-price="₹181"
+                data-description="A sleek and versatile black long-sleeve t-shirt perfect for casual and semi-casual occasions."
+                data-image="images/men-tshirt1.jpeg"
+                data-material-type="Cotton Blend"
+                data-length="Standard T-Shirt Length"
+                data-occasion-type="Casual and Semi-Casual"
+                data-sleeve-type="Full Sleeves"
+                data-pattern="Solid"
+                data-style="Modern and Slim Fit"
+                data-country-of-origin="India">
+                    <img src="images/men-tshirt1.jpeg" class="card-img-top card-img-custom" alt="Black Full Sleeves">
+                    <div class="card-body">
+                        <h5 class="card-title">Black T-Shirt</h5>
+                        <p class="card-text">₹181</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.2</span> 21381 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Black Full Sleeves" data-price="181" data-image="images/men-tshirt1.jpeg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Black Full Sleeves" data-price="181" data-image="images/men-tshirt1.jpeg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="White T-Shirt"
+                data-price="₹190"
+                data-description="A crisp and versatile white long-sleeve t-shirt perfect for casual and semi-casual occasions."
+                data-image="images/men-tshirt2.jpeg"
+                data-material-type="Cotton Blend"
+                data-length="Standard T-Shirt Length"
+                data-occasion-type="Casual and Semi-Casual"
+                data-sleeve-type="Full Sleeves"
+                data-pattern="Solid"
+                data-style="Modern and Slim Fit"
+                data-country-of-origin="India"
+                >
+                    <img src="images/men-tshirt2.jpeg" class="card-img-top card-img-custom" alt="Sassy White T-Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">White T-Shirt</h5>
+                        <p class="card-text">₹190 <small class="text-muted">5% off</small></p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.0</span> 724 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Sassy White T-Shirt" data-price="190" data-image="images/men-tshirt2.jpeg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Sassy White T-Shirt" data-price="190" data-image="images/men-tshirt2.jpeg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+            <!-- Product Card 5 -->
+             <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Kurta with White Dhoti"
+                data-price="₹491"
+                data-description="A stylish and traditional outfit featuring a pink kurta paired with a white dhoti, perfect for festive and cultural occasions."
+                data-image="images/men-veshti.jpg"
+                data-material-type="Silk Blend"
+                data-length="Knee-Length Kurta and Full-Length Dhoti"
+                data-occasion-type="Festive and Traditional"
+                data-sleeve-type="Full Sleeves"
+                data-pattern="Solid Kurta with Contrast Dhoti Border"
+                data-style="Classic Fit"
+                data-country-of-origin="India"
+                >
+                    <img src="images/men-veshti.jpg" class="card-img-top card-img-custom" alt="Veshti with Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">Kurta with White Dhoti</h5>
+                        <p class="card-text">₹491</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">3.8</span> 2596 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Veshti with Shirt" data-price="491" data-image="images/men-veshti.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Veshti with Shirt" data-price="491" data-image="images/men-veshti.jpg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Shirt and Gold Border Dhoti"
+                data-price="₹499"
+                data-description="A traditional ivory shirt with a gold-bordered dhoti and matching angavastram, perfect for religious and cultural ceremonies.
+                "
+                data-image="images/men-veshti1.jpeg"
+                data-material-type="Cotton Blend"
+                data-length="Standard Shirt Length and Full-Length Dhoti"
+                data-occasion-type="Ceremonial and Traditional"
+                data-sleeve-type="Full Sleeves"
+                data-pattern="Solid Shirt with Contrasting Dhoti Border"
+                data-style="Regular Fit"
+                data-country-of-origin="India"
+                >
+                    <img src="images/men-veshti1.jpeg" class="card-img-custom" alt="Total Fit">
+                    <div class="card-body">
+                        <h5 class="card-title">Shirt and Gold Dhoti</h5>
+                        <p class="card-text">₹499</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.2</span> 39645 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Total Fit" data-price="499" data-image="images/men-veshti1.jpeg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Total Fit" data-price="499" data-image="images/men-veshti1.jpeg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        
+            <!-- Product Card 7 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Patterned Long-Sleeve T-Shirt"
+                data-price="₹650"
+                data-description="A modern and stylish teal long-sleeve t-shirt featuring a geometric pattern, perfect for casual outings and everyday wear."
+                data-image="images/shirt1.png"
+                data-material-type="Cotton Blend"
+                data-length="Standard T-Shirt Length"
+                data-occasion-type="Casual and Semi-Casual"
+                data-sleeve-type="Full Sleeves"
+                data-pattern="Geometric Print"
+                data-style="Slim Fit"
+                data-country-of-origin="India"
+                >
+                    <img src="images/shirt1.png" class="card-img-top card-img-custom"  alt="Style Yourself">
+                    <div class="card-body">
+                        <h5 class="card-title">Patterned T-Shirt</h5>
+                        <p class="card-text">₹350</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.2</span> 21381 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Patterned T-Shirt" data-price="350" data-image="images/shirt1.png"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Patterned T-Shirt" data-price="350" data-image="images/shirt1.png">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+            <!-- Product Card 8 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Tri-Color Short-Sleeve T-Shirt"
+                data-price="₹490"
+                data-description="A trendy and comfortable short-sleeve t-shirt featuring a dynamic tri-color block design in black, teal, and navy, ideal for casual and semi-casual wear."
+                data-image="images/shirt2.png"
+                data-material-type="Cotton Blend"
+                data-length="Standard T-Shirt Length"
+                data-occasion-type="Casual and Semi-Casual"
+                data-sleeve-type="Short Sleeves"
+                data-pattern="Color Block"
+                data-style="Slim Fit"
+                data-country-of-origin="India"
+                >
+                    <img src="images/shirt2.png" class="card-img-top card-img-custom"  style=" height: 252px; " alt="Sassy You">
+                    <div class="card-body">
+                        <h5 class="card-title">Tri-Color Short-Sleeve T-Shirt</h5>
+                        <p class="card-text">₹490 <small class="text-muted">5% off</small></p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.0</span> 724 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Tri-Color Short-Sleeve T-Shirt" data-price="490" data-image="images/shirt2.png"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Tri-Color Short-Sleeve T-Shirt" data-price="490" data-image="images/shirt2.png">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="productImage" src="" class="img-fluid" alt="Product Image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 id="productTitle"></h3>
+                            <p id="productPrice"></p>
+                            <p id="productDescription"></p>
+                            <p><strong>Material type:</strong> <span id="productMaterialType"></span></p>
+                            <p><strong>Length:</strong> <span id="productLength"></span></p>
+                            <p><strong>Occasion type:</strong> <span id="productOccasionType"></span></p>
+                            <p><strong>Sleeve type:</strong> <span id="productSleeveType"></span></p>
+                            <p><strong>Pattern:</strong> <span id="productPattern"></span></p>
+                            <p><strong>Style:</strong> <span id="productStyle"></span></p>
+                            <p><strong>Country of Origin:</strong> <span id="productCountryOfOrigin"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-4 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Shoppy</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">Careers</a></li>
+                        <li><a href="#" class="text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Help & FAQs</a></li>
+                        <li><a href="#" class="text-white">Shipping & Delivery</a></li>
+                        <li><a href="#" class="text-white">Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-white">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Policy</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms of Use</a></li>
+                        <li><a href="#" class="text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Twitter</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                        <li><a href="#" class="text-white">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 Shoppy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="product-details.js"></script>
+</body>
+</html>

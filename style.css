@@ -1,0 +1,207 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#e4e9fc;
+    color: #333;
+    padding: 20px;
+}
+
+/* Navbar and Dropdown */
+.navbar .dropdown-menu {
+    display: none;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Carousel styles */
+.carousel-item img {
+    max-height: 400px; 
+    object-fit: contain;
+}
+
+.carousel-heading {
+    position: relative;
+    margin-bottom: -50px; /* Adjust this value to fine-tune the position */
+}
+
+.carousel-heading h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.carousel-heading p {
+    color: #777;
+    font-size: 1.2rem;
+    margin-top: -10px;
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("images/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero-text {
+    margin-left: 100px;
+}
+
+/* Carousal Background */
+.carousal1-bg {
+    background-color: #e7eaf6;
+}
+
+/* Card Styles */
+.card {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Cart and Payment */
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-items {
+    flex: 2;
+}
+
+.total-price {
+    flex: 1;
+    text-align: right;
+}
+
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-item {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.cart-item-image {
+    height: 150px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.cart-item-text {
+    font-size: 18px;
+    margin-left: 20px;
+    flex-grow: 1;
+    text-align: left;
+}
+.dropdown-menu {
+    position: absolute; /* Ensure the dropdown is positioned absolutely */
+    right: 0; /* Aligns the dropdown to the right of its parent */
+    top: 100%; /* Positions the dropdown below the button */
+    width: 400px; /* Set a fixed width for the dropdown */
+    max-height: 500px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling if items exceed max-height */
+    background-color: #fff; /* Background color */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Optional styling for items in the dropdown */
+.dropdown-item {
+    padding: 10px; /* Padding for items */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Styling for the "Buy Now" button */
+#buy-now {
+    margin-top: 10px; /* Space above the button */
+}
+
+.parent-container {
+    position: relative; /* Makes the dropdown position relative to this container */
+}
+
+
+#total-price {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Miscellaneous */
+.img-custom {
+    height: 170px;
+    width: 170px;
+}
+
+.margin-class {
+    margin-bottom: 100px;
+}
+
+.text-white {
+    text-decoration: none;
+}
+
+.add-to-cart {
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color:#cad0e4; 
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+    background-size: 100%, 100%;
+}
+
+/* Optional: Add hover effects to the arrows */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: transparent; /* Darker shade on hover */
+}
+
+.accordion-button:hover{
+    background-color:#cad0e4;
+}

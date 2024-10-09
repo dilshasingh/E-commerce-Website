@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppy Kids' Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="cards.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .view-details-btn {
+            background-color: #ff4081;
+            border-color: #ff4081;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .view-details-btn:hover {
+            background-color: #ff1a66;
+            border-color: #ff1a66;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Shoppy Kids' Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item dropdown" style="z-index: 500;">
+                        <a class="nav-link dropdown-toggle custom-cart" href="#" id="cartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cart <span id="cart-count" class="badge bg-dark">0</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cartDropdown">
+                            <li><div id="cart-items" class="dropdown-item">No items in cart</div></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="payment.html" id="buy-now" class="btn btn-primary btn-block buy-now-btn" style="display: none;">Buy Now</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row row-custom">
+            <!-- Product Card 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Brown Checkered Outfit with Polka Dot Shirt"
+                data-price="₹899"
+                data-description="Stylish outfit featuring a black shirt with golden polka dots, paired with brown checkered pants and matching suspenders and cap."
+                data-image="images/kids-boy1.jpg"
+                data-material-type="Cotton"
+                data-length="Full Length Pants"
+                data-occasion-type="Casual Wear"
+                data-sleeve-type="Short Sleeve"
+                data-pattern="Checkered and Polka Dots"
+                data-style="Vintage Modern Wear"
+                data-country-of-origin="India"
+                >
+                  
+                    <img src="images/kids-boy1.jpg" class="card-img-top card-img-custom" alt="Fashionable Bellies">
+             
+                    <div class="card-body">
+                        <h5 class="card-title">Ramper For You</h5>
+                        <p class="card-text">₹899</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">3.8</span> 2596 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Ramper For You" data-price="899" data-image="images/kids-boy1.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Georgette suit" data-price="1830" data-image="images/kids-boy1.jpg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Beige Shorts Outfit with White Shirt"
+                data-price="₹1830"
+                data-description="Adorable outfit featuring a white short-sleeve shirt paired with beige shorts, matching suspenders, and a bow tie, perfect for a smart casual look."
+                data-image="images/kids-boy2.jpeg"
+                data-material-type="Cotton"
+                data-length="Knee Length Shorts"
+                data-occasion-type="Casual Wear"
+                data-sleeve-type="Short Sleeve"
+                data-pattern="Solid"
+                data-style="Classic Vintage Wear"
+                data-country-of-origin="India"
+                >
+                    
+                    <img src="images/kids-boy2.jpeg" class="card-img-top card-img-custom" alt="Pretty Graceful Women">
+               
+                    <div class="card-body">
+                        <h5 class="card-title">Comfy Ramper</h5>
+                        <p class="card-text">₹1830</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.2</span> 39645 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Comfy Ramper" data-price="1830" data-image="images/kids-boy2.jpeg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Comfy Ramper" data-price="1830" data-image="images/kids-boy2.jpeg">Buy Now</button>
+                    
+                </div>
+                </div>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Pink Ruffled Dress with Embroidered Bodice"
+                data-price="₹181"
+                data-description="Charming pink dress featuring ruffled sleeves and a beautifully embroidered bodice, perfect for a sweet and stylish look."
+                data-image="images/kids-dress1.jpeg"
+                data-material-type="Cotton"
+                data-length="Knee Length"
+                data-occasion-type="Casual Wear"
+                data-sleeve-type="Sleeveless"
+                data-pattern="Embroidered"
+                data-style="Charming Casual Wear"
+                data-country-of-origin="India"
+                >
+                    
+                    <img src="images/kids-dress1.jpeg" class="card-img-top card-img-custom" alt="Charvi Fabulous Kurtis">
+              
+                    <div class="card-body">
+                        <h5 class="card-title">Cute Pink Frock</h5>
+                        <p class="card-text">₹181</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.2</span> 21381 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Cute Pink Frock" data-price="181" data-image="images/kids-dress1.jpeg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Cute Pink Frock" data-price="181" data-image="images/kids-dress1.jpeg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        
+            <!-- Product Card 4 -->
+
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Elegant Red Satin Dress for Girls"
+                data-price="₹1,299"
+                data-description="A stunning sleeveless red satin dress designed for young girls. This dress features a fitted bodice with a subtle V-neckline, a ribbon belt at the waist, and a voluminous, flared skirt that adds a touch of elegance, perfect for special occasions or festive celebrations."
+                data-image="images/kids-dress2.jpg"
+                data-material-type="Satin"
+                data-length="Knee-Length Dress"
+                data-occasion-type="Party Wear"
+                data-sleeve-type="Sleeveless"
+                data-pattern="Solid"
+                data-style="Elegant Party Wear"
+                data-country-of-origin="India"
+                >
+                
+                    <img src="images/kids-dress2.jpg" class="card-img-top card-img-custom"alt="Lafz Classic">
+     
+                    <div class="card-body">
+                        <h5 class="card-title">Sassy Red Frock</h5>
+                        <p class="card-text">₹1299 <small class="text-muted">5% off</small></p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.0</span> 724 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Sassy Red Frock" data-price="1299" data-image="images/kids-dress2.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Sassy Red Frock" data-price="1299" data-image="images/kids-dress2.jpg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        
+</div>
+        
+            <!-- Product Card 5 -->
+             <div class="row row-custom">
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Graphic T-Shirt with Tie-Dye Shorts"
+                data-price="₹1000"
+                data-description="Trendy outfit featuring a white graphic t-shirt with colorful sunglasses print, paired with vibrant tie-dye shorts. Perfect for a fun and casual summer look."
+                data-image="images/kids-girl-tshirt1.jpeg"
+                data-material-type="Cotton"
+                data-length="Knee-Length Shorts"
+                data-occasion-type="Casual Wear"
+                data-sleeve-type="Short Sleeve"
+                data-pattern="Graphic"
+                data-style="Trendy Casual Wear"
+                data-country-of-origin="India"
+                >
+                  
+                    <img src="images/kids-girl-tshirt1.jpeg" class="card-img-top card-img-custom"alt="Fashionable Bellies">
+          
+                    <div class="card-body">
+                        <h5 class="card-title">Fabulous T-Shirt</h5>
+                        <p class="card-text">₹1000</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">3.8</span> 2596 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Fabulous T-Shirt" data-price="1000" data-image="images/kids-girl-tshirt1.jpeg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Fabulous T-Shirt" data-price="1000" data-image="images/kids-girl-tshirt1.jpeg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+            <!-- Product Card 6 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Mint Green Graphic T-Shirt with White Shorts"
+                data-price="₹1,049"
+                data-description="Charming outfit featuring a mint green graphic t-shirt with a pastel nature-themed print and motivational text, paired with comfortable white shorts. Ideal for a relaxed and stylish casual look."
+                data-image="images/kids-girl-tshirt2.jpeg"
+                data-material-type="Cotton"
+                data-length="Knee-Length Shorts"
+                data-occasion-type="Casual Wear"
+                data-sleeve-type="Short Sleeve"
+                data-pattern="Graphic"
+                data-style="Casual Chic Wear"
+                data-country-of-origin="India"
+                >
+                 
+                    <img src="images/kids-girl-tshirt2.jpeg" class="card-img-top card-img-custom" alt="Pretty Graceful Women">
+                
+                    <div class="card-body">
+                        <h5 class="card-title">Green Cotton T-Shirt</h5>
+                        <p class="card-text">₹1049</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.2</span> 39645 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Green Cotton T-Shirt" data-price="1049" data-image="images/kids-girl-tshirt2.jpeg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Green Cotton T-Shirt" data-price="1049" data-image="images/kids-girl-tshirt2.jpeg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        
+            <!-- Product Card 7 -->
+
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Blue T-Shirt with Black Pants"
+                data-price="₹350"
+                data-description="Comfortable and stylish outfit featuring a blue short-sleeve T-shirt paired with black pants, perfect for casual wear."
+                data-image="images/kids-shirt1.jpeg"
+                data-material-type="Cotton"
+                data-length="Full Length Pants"
+                data-occasion-type="Casual Wear"
+                data-sleeve-type="Short Sleeve"
+                data-pattern="Solid"
+                data-style="Classic Casual Wear"
+                data-country-of-origin="India"
+                >
+               
+                    <img src="images/kids-shirt1.jpeg" class="card-img-top card-img-custom" alt="Style Yourself">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Handsome fit</h5>
+                        <p class="card-text">₹350</p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.2</span> 21381 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Handsome fit" data-price="350" data-image="images/kids-shirt1.jpeg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Handsome fit" data-price="350" data-image="images/kids-shirt1.jpeg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+            <!-- Product Card 8 -->
+            <div class="col-md-3 mb-4">
+                <div class="card card-custom" data-title="Denim Shirt with Black Jeans"
+                data-price="₹490"
+                data-description="Trendy outfit featuring a denim long-sleeve shirt paired with black jeans, perfect for a casual yet stylish look."
+                data-image="images/kids-shirt2.jpg"
+                data-material-type="Denim"
+                data-length="Full Length Jeans"
+                data-occasion-type="Casual Wear"
+                data-sleeve-type="Long Sleeve"
+                data-pattern="Solid"
+                data-style="Classic Casual Wear"
+                data-country-of-origin="India"
+                >
+               
+                    <img src="images/kids-shirt2.jpg" class="card-img-top card-img-custom"alt="Lafz Classic Deodorant">
+            
+                    <div class="card-body">
+                        <h5 class="card-title">Sassy Shirt</h5>
+                        <p class="card-text">₹490 <small class="text-muted">5% off</small></p>
+                        <p class="card-text"><small class="text-muted">Free Delivery</small></p>
+                        <p class="card-text"><span class="badge rounded-pill bg-dark">4.0</span> 724 Reviews</p>
+                    </div>
+                    <button class="btn btn-primary view-details-btn">View Details</button>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                    <button class="btn btn-primary add-to-cart add-to-cart-func" data-title="Sassy Shirt" data-price="490" data-image="images/kids-shirt2.jpg"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-primary buy-now-btn add-to-cart-func" data-title="Sassy Shirt" data-price="490" data-image="images/kids-shirt2.jpg">Buy Now</button>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="productImage" src="" class="img-fluid" alt="Product Image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 id="productTitle"></h3>
+                            <p id="productPrice"></p>
+                            <p id="productDescription"></p>
+                            <p><strong>Material type:</strong> <span id="productMaterialType"></span></p>
+                            <p><strong>Length:</strong> <span id="productLength"></span></p>
+                            <p><strong>Occasion type:</strong> <span id="productOccasionType"></span></p>
+                            <p><strong>Sleeve type:</strong> <span id="productSleeveType"></span></p>
+                            <p><strong>Pattern:</strong> <span id="productPattern"></span></p>
+                            <p><strong>Style:</strong> <span id="productStyle"></span></p>
+                            <p><strong>Country of Origin:</strong> <span id="productCountryOfOrigin"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-4 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Shoppy</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">Careers</a></li>
+                        <li><a href="#" class="text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Help & FAQs</a></li>
+                        <li><a href="#" class="text-white">Shipping & Delivery</a></li>
+                        <li><a href="#" class="text-white">Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-white">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Policy</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms of Use</a></li>
+                        <li><a href="#" class="text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Twitter</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                        <li><a href="#" class="text-white">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 Shoppy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="product-details.js"></script>
+    
+</body>
+</html>
